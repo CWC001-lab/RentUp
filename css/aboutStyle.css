@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+section{
+    background-color:rgba(29, 38, 54, 50%);
+    height: 300px;
+    width: 100%;
+    background-image: url(images/about.56e92b20e762df2fa5de.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-blend-mode: overlay;
+   /* background-attachment: fixed; */
+    opacity: 0.8;
+  
+    
+ }
+ .about{
+     width: 500px;
+     position: absolute;
+     top: 150px ;
+     padding: 50px;
+     margin-left: 50px;
+     
+ }
+ p::selection{
+   color: rgb(89, 255, 71);
+   background-color: hsl(0, 0%, 21%);
+ }
+ h4{
+    color: #ffffff;
+    font-size: 16px;
+    font-family:sans-serif;
+    margin-bottom: 10px;
+    width: max-content;
+    position: relative;
+    cursor:pointer ;
+ }
+ h4::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #27ae60;
+    transition: 0.4s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+
+ }
+ h4:hover::after{
+  transform: scaleX(1);
+ }
+ 
+ h1{
+     color: #ffffff;
+     font-size: 40px;
+     font-family: sans-serif; 
+   
+    
+ }
+ .container{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    
+    
+  
+    
+ }
+ .text{
+    width: 600px;
+    height: fit-content;
+    margin-bottom: 50px;
+ }
+ .heading{
+    color: #2d3954;
+    font-size: 40px;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-top: 15px;
+   
+
+ }
+ .heading::first-letter{
+   font-size: 60px;
+   font-style: italic;
+   color: #27ae60;
+ }
+ .p1{
+   color: #72809d;
+   font-size: 18px;
+   margin-left: 10px;
+   line-height: 30px;
+  
+   
+ }
+ .p1:first-child i{
+   color: red;
+ }
+
+ .paragraphs{
+   height: fit-content;
+   font-size: 17px;
+   font-family: sans-serif;
+    padding-top: 10px;
+    word-spacing: 10px;
+    margin-top: 50px;
+    line-height: 28px;
+    
+ }
+ .paragraphs::first-letter{
+    font-size: 35px;
+    font-style: oblique;
+    color: #27ae60;
+ }
+
+ button{
+   padding: 25px;
+   margin-top: 30px;
+   width: 200px;
+   border-radius: 50px;
+   border: none;
+   font-size: 20px;
+   background-color: #27ae60;
+   color: #ffffff;
+   cursor: pointer;
+ }
+ button:hover{
+   background-color: transparent;
+   color: #000000;
+ }
+ 
+
+@media (max-width:767px) and (min-width:321px){
+    section{
+     width: 100%;
+     /* flex-wrap: wrap; */
+      
+    
+    }
+    .about{
+      width: 500px;
+    }
+    .text{
+      width: 80%;
+     
+    }
+    .about h1{
+      font-size: 30px;
+    }
+    .about image{
+      width: 300px
+      
+    }
+}
+@media (max-width:321px){
+       
+       .about{
+        width: 250px;
+        
+       }
+}

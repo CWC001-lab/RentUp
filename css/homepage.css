@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    perspective: 1000px; /* Define perspective to see the 3D effect */
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.5s; /* Smooth transition */
+}
+
+.box:hover {
+    transform: translateZ(100px); /* Move the box 100px closer */
+}
